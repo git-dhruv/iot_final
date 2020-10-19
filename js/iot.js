@@ -34,7 +34,7 @@ function change_to_iframe(framedata)
 }
 function back_to_img(framedata)
 {
-	document.getElementById(framedata).style.width = "72px";
-	document.getElementById(framedata).style.height ="120px";
+//	document.getElementById(framedata).style.width = "72px";
+//	document.getElementById(framedata).style.height ="120px";
 	document.getElementById(framedata).src="images/"+framedata+".png";
 }
