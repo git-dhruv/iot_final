@@ -1,11 +1,10 @@
 function change_to_iframe(framedata)
 {
-	//document.getElementById("icons").style.display="none";
-	var temp = "https://thingspeak.com/channels/1191743/charts/1?dynamic=true&results=60&title=Temperature&type=line"
-	var moist = "https://thingspeak.com/channels/1186763/charts/1?bgcolor=%23ffffff&dynamic=true&results=60&type=line&update=15";
-	var gas = "https://thingspeak.com/channels/1186763/charts/1?bgcolor=%23ffffff&dynamic=true&results=60&type=line&update=15";
-	var tilt = "https://thingspeak.com/channels/1186763/charts/1?bgcolor=%23ffffff&dynamic=true&results=60&type=line&update=15";
-	var pir = "https://thingspeak.com/channels/1186763/charts/1?bgcolor=%23ffffff&dynamic=true&results=60&type=line&update=15";	
+	var temp = "https://thingspeak.com/channels/1194238/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"
+	var moist = "https://thingspeak.com/channels/1194238/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15";
+	var gas = "https://thingspeak.com/channels/1194238/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15";
+	var tilt = "https://thingspeak.com/channels/1194238/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15";
+	var pir = "https://thingspeak.com/channels/1194238/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15";	
 	if(framedata=="temp")
 	{
 		framesrc = temp;
@@ -34,7 +33,5 @@ function change_to_iframe(framedata)
 }
 function back_to_img(framedata)
 {
-//	document.getElementById(framedata).style.width = "72px";
-//	document.getElementById(framedata).style.height ="120px";
 	document.getElementById(framedata).src="images/"+framedata+".png";
 }
